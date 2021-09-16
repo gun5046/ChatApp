@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{../static/css/main.css}" type="text/css"/>
+    <title>Chat Main</title>
+</head>
+<body>
+
+<form method="get" th:action="@{/msg/room/new}">
+    <button id="makeRoom" type="submit">방 만들기</button>
+</form>
+
+
+<div id="RoomList">
+    <!--대화방-->
+
+    <ul th:each="room : ${room_list}">
+        <form method="post" th:action="@{/msg/chat}" th:object="${RoomDto}">
+            <input id="user_id" placeholder="아이디를 입력하세요" th:field="*{user_id}" type="text">
+            <p th:field="*{room_name}" th:text="${room}"></p>
+            <button type="submit">입장</button>
+        </form>
+    </ul>
+</div>
+
+
+</body>
+</html>
+
+

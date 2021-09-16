@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{../static/css/main.css}" type="text/css"/>
+    <title>Insert title here</title>
+</head>
+<body>
+<form method="get" th:action="@{/msg/room/new/room-name}">
+    <input placeholder="방 이름" th:name="room-name" type="text">
+    <button id="makeRoom" type="submit">완료</button>
+
+</form>
+</body>
+</html>
+
+<script>
+
+</script>

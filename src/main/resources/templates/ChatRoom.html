@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" content="width=device-width" name="viewport">
+
+    <link rel="stylesheet" th:href="@{../static/css/main.css}" type="text/css"/>
+    <script
+            src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <p id="room_name" th:text="${room_name}" th:value="${room_name}"
+           type="text"></p>
+    </div>
+
+    <div class="content">
+        <table id="msg_box">
+            <tbody id="my_msg">
+
+            </tbody>
+            <tbody id="received_msg">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="send">
+        <input id="sendMsg" placeholder="내용을 입력하세요" type="text">
+        <button id="sendBtn">전송</button>
+        <!--보낼 내용 & send btn-->
+    </div>
+</div>
+</div>
+
+
+<!-- video -->
+<div class="container">
+    <div id="myVideoContainer">
+        <video autoplay id="myVideo" width="480px"></video>
+        <button id="muteBtn">Mute</button>
+        <button id="cameraBtn">CameraOn</button>
+    </div>
+    <div id="receivedVideoContainer">
+        <video autoplay id="receivedVideo" width="480px"></video>
+    </div>
+</div>
+
+<script th:inline="javascript">
+    //javascript에서 thymeleaf 변수 사용할떄 -> /*[[${room_name}]]*/
+	/*<![ CDATA[ */
+	let room_name = /*[[${room_name}]]*/;
+    let sender=/*[[${user_id}]]*/;
+    /* ]]> */
+</script>
+<script th:src="@{../static/js/ChatRoom.js}"></script>
+</body>
+</html>
+

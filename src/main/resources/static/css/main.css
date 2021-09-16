@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+div{
+	width:300px;
+	max-width:100%;
+	text-align: center;
+	padding:12px;
+	color :black;
+	background:#B2CCFF;
+	position:relative;
+	border:1px solid black;
+}
