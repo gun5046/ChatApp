@@ -10,8 +10,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class ChatMessage {
-	private String sender;
-	private String message;
-	private String room_name;
+    private String sender;
+    private String message;
+    private String room_name;
+    private String type;
 
 }

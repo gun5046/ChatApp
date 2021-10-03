@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8" content="width=device-width" name="viewport">
 
@@ -14,18 +14,12 @@
 
 <div class="container">
     <div class="header">
-        <p id="room_name" th:text="${room_name}" th:value="${room_name}"
-           type="text"></p>
+        <p id="room_name" th:text="${room_name}" type="text"></p>
     </div>
 
     <div class="content">
         <table id="msg_box">
-            <tbody id="my_msg">
 
-            </tbody>
-            <tbody id="received_msg">
-
-            </tbody>
         </table>
     </div>
 
@@ -40,23 +34,27 @@
 
 <!-- video -->
 <div class="container">
+    <button id="video_start">비디오 시작</button>
     <div id="myVideoContainer">
         <video autoplay id="myVideo" width="480px"></video>
         <button id="muteBtn">Mute</button>
         <button id="cameraBtn">CameraOn</button>
     </div>
     <div id="receivedVideoContainer">
-        <video autoplay id="receivedVideo" width="480px"></video>
+
     </div>
 </div>
 
 <script th:inline="javascript">
     //javascript에서 thymeleaf 변수 사용할떄 -> /*[[${room_name}]]*/
 	/*<![ CDATA[ */
-	let room_name = /*[[${room_name}]]*/;
     let sender=/*[[${user_id}]]*/;
+    let room_name=/*[[${room_name}]]*/;
     /* ]]> */
+
+
 </script>
+
 <script th:src="@{../static/js/ChatRoom.js}"></script>
 </body>
 </html>

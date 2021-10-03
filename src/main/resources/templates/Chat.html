@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" th:href="@{../static/css/main.css}" type="text/css"/>
@@ -14,12 +14,14 @@
 
 <div id="RoomList">
     <!--대화방-->
-
-    <ul th:each="room : ${room_list}">
+    <ul th:each="room,index: ${room_list}">
         <form method="post" th:action="@{/msg/chat}" th:object="${RoomDto}">
-            <input id="user_id" placeholder="아이디를 입력하세요" th:field="*{user_id}" type="text">
-            <p th:field="*{room_name}" th:text="${room}"></p>
-            <button type="submit">입장</button>
+            <li>
+                <input id="user_id" placeholder="아이디를 입력하세요" name="user_id" type="text">
+                <p th:text="${room}"></p>
+                <input type="hidden" th:value="${room}" name="room_name"/>
+                <button type="submit">입장</button>
+            </li>
         </form>
     </ul>
 </div>
