@@ -32,9 +32,11 @@
   + 연결을 수행할 때마다 3-way handshakng 기법을 사용(HTTP 1.0)
   + HTML 페이지를 수신받고 완전히 연결을 종료시킴
     + 송수신 과정
+    
       ![http송수신](https://user-images.githubusercontent.com/48385816/135965726-bafd7a6f-d374-458d-a64a-6aec0b8937cc.png)
     
     + 세션 연결 과정
+    
       ![http](https://user-images.githubusercontent.com/48385816/135965589-38ad16d6-4de6-4b36-851c-d044e1090a02.png)
   
   
@@ -46,10 +48,12 @@
   +클라이언트와 한 번 연결이 되면 계속 같은 라인을 사용해서 통신
   +클라이언트와 서버 서로 Request 가능(연결지향 양방향 전이중 통신)
   +클라이언트와 서버가 연결되어 있기 때문에 실시간 통신이 가능
+    
     +Socket 통신과정 예시
     
     
-    
+    ![Socket 통신과정](https://user-images.githubusercontent.com/48385816/135966011-38a28870-f8ba-4525-a762-562174027d8d.png)
+
     출처 : https://12bme.tistory.com/297
 
 --------------------------------------------------------------------
