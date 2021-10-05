@@ -32,7 +32,7 @@
   + 연결을 수행할 때마다 3-way handshakng 기법을 사용(HTTP 1.0)
   + HTML 페이지를 수신받고 완전히 연결을 종료시킴
     + 송수신 과정
-      
+      ![http송수신](https://user-images.githubusercontent.com/48385816/135965726-bafd7a6f-d374-458d-a64a-6aec0b8937cc.png)
     
     + 세션 연결 과정
       ![http](https://user-images.githubusercontent.com/48385816/135965589-38ad16d6-4de6-4b36-851c-d044e1090a02.png)
