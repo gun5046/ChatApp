@@ -88,6 +88,5 @@
 + P2P(PeerToPeer)통신
 
 실시간으로 서버를 거치지않고 P2P통신을 위해 먼저 소켓통신으로 P2P Communication 동의 여부, Peer의 주소 등을 공유한다.
-이때 소켓통신은 Stomp를 사용. 또한 두 개의 단말이 P2P 연결을 가능하게 하도록
-최적의 경로를 찾아주는 ICE(Interactive Connectivity Establishment)라는 프레임워크를 사용한다.
-Local에서 동작하므로 보안사항이나 방화벽 우회 절차는 생략하였다.
+이때 소켓통신은 Stomp를 사용. 또한 두 개의 단말이 P2P 연결을 가능하게 하도록 최적의 경로를 찾아주는 ICE(Interactive Connectivity Establishment)라는 프레임워크를 사용한다.
+ Local에서 동작하므로 보안사항이나 방화벽 우회 절차는 생략하였다.
