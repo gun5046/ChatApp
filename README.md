@@ -52,7 +52,8 @@
     +Socket 통신과정 예시
     
     
-    ![Socket 통신과정](https://user-images.githubusercontent.com/48385816/135966011-38a28870-f8ba-4525-a762-562174027d8d.png)
+    ![Socket 통신과정](https://user-images.githubusercontent.com/48385816/135966108-ea5f3ef3-4ee1-4533-8c46-1e7045e7f91b.png)
+
 
     출처 : https://12bme.tistory.com/297
 
