@@ -38,7 +38,8 @@
     + 세션 연결 과정
     
      
-  
+      ![http](https://user-images.githubusercontent.com/48385816/135966281-6eeb731a-69f9-40ab-9a93-38e6de5c4bcf.png)
+
   
   
   
@@ -48,13 +49,12 @@
   +클라이언트와 한 번 연결이 되면 계속 같은 라인을 사용해서 통신
   +클라이언트와 서버 서로 Request 가능(연결지향 양방향 전이중 통신)
   +클라이언트와 서버가 연결되어 있기 때문에 실시간 통신이 가능
+    
     +Socket 통신과정 예시
     
    ![Socket 통신과정](https://user-images.githubusercontent.com/48385816/135966108-ea5f3ef3-4ee1-4533-8c46-1e7045e7f91b.png)
 
-
-
-    출처 : https://12bme.tistory.com/297
+출처 : https://12bme.tistory.com/297
 
 --------------------------------------------------------------------
 
