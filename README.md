@@ -37,7 +37,7 @@
     
     + 세션 연결 과정
     
-      ![http](https://user-images.githubusercontent.com/48385816/135965589-38ad16d6-4de6-4b36-851c-d044e1090a02.png)
+     
   
   
   
